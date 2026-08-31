@@ -14,4 +14,4 @@ HTML • CSS
 
 ### 🔗 Live Demo
 
-[View Portfolio]([YOUR_VERCEL_LINK](https://portfolio-liart-phi-80.vercel.app/))
+[View Portfolio](https://portfolio-liart-phi-80.vercel.app/)
