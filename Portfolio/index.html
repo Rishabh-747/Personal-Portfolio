@@ -26,7 +26,7 @@
     <!---------------- CSS ----------------->
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
-  
+
   <body>
     <!-- ================= Header ================= -->
 
@@ -47,50 +47,80 @@
           >Resume</a
         >
 
-        <button class="menu-btn" aria-label="Open navigation menu"> <i class="fa-solid fa-bars"></i> </button>
+        <button class="menu-btn" aria-label="Open navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </nav>
     </header>
 
     <!-- ================= Hero Section ================= -->
 
-    <div id="home" class="hero-box section">
-      <section class="hero">
+    <section id="home" class="hero-box section">
+      <div class="hero-bg-glow"></div>
+
+      <div class="hero">
         <div class="hero-intro">
           <p class="intro-1">Hello, I'm</p>
+
           <h1 class="intro-2">RISHABH KUMAR</h1>
+
           <h2 class="intro-3">Frontend Developer</h2>
         </div>
 
         <p class="hero-desc">
-          Hi, I am Rishabh Kumar — a Frontend Developer. I build responsive and
-          user-friendly websites using modern web technologies. I focus on clean
-          design, structured code, and smooth user experience.
+          I build responsive, modern, and user-friendly web experiences using
+          JavaScript, React, and Tailwind CSS. I focus on clean UI, structured
+          code, and delivering smooth user experiences.
         </p>
 
         <div class="hero-btns">
-          <a href="#projects" class="hero-btns-p hero-btn btn">View Projects</a>
-          <div class="hero-btns-r hero-btn btn">
-            <a href="/assets/files/resume.pdf" download="Rishabh_Frontend"
-              >Download</a
-            >
-            <a href="/assets/files/resume.pdf" target="_blank">Resume</a>
-          </div>
+          <a href="#projects" class="hero-btn hero-btn-primary btn">
+            View Projects
+          </a>
+
+          <a
+            href="/assets/files/resume.pdf"
+            target="_blank"
+            class="hero-btn hero-btn-outline btn"
+          >
+            View Resume
+          </a>
         </div>
 
         <div class="social-icon">
-          <a href="https://linkedin.com/in/rishabh-kumar-rush" target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/Rishabh-747" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-          <a href="mailto:rishabh.kumar.rush@gmail.com"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
+          <a
+            href="https://linkedin.com/in/rishabh-kumar-rush"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://github.com/Rishabh-747"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="mailto:rishabh.kumar.rush@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!-- ================= Main Content ================= -->
 
@@ -98,33 +128,72 @@
       <!-- ================= About Section ================= -->
 
       <section id="about" class="about section">
-        <h2 class="h-title">About me</h2>
+        <h2 class="h-title">About Me</h2>
+
         <div class="about-content">
-          <h3>Frontend Developer</h3>
-          <p>
-            I'm a self-motivated Frontend Developer with a strong passion for
-            designing responsive and interactive web applications. I enjoy
-            transforming ideas into beautiful websites that provide excellent
-            user experiences.
-          </p>
+          <div class="about-text">
+            <h3>Frontend Developer</h3>
 
-          <p>
-            My primary technologies include HTML5, CSS3, JavaScript (ES6+),
-            React, Tailwind CSS, Git, and GitHub. I continuously improve my
-            skills by building projects and learning modern frontend development
-            practices.
-          </p>
+            <p>
+              I'm a self-motivated Frontend Developer passionate about building
+              responsive, modern, and user-friendly web experiences. I enjoy
+              transforming ideas and designs into clean, functional interfaces.
+            </p>
 
-          <p>
-            Currently I'm looking for my first opportunity as a Frontend
-            Developer where I can contribute, learn from experienced developers,
-            and grow professionally.
-          </p>
+            <p>
+              My primary technologies include HTML5, CSS3, JavaScript (ES6+),
+              React, Tailwind CSS, Git, and GitHub. I continuously improve my
+              skills by building real-world projects and learning modern
+              frontend development practices.
+            </p>
+
+            <p>
+              I'm currently looking for my first opportunity as a Frontend
+              Developer where I can contribute to real projects, learn from
+              experienced developers, and grow professionally.
+            </p>
+
+            <a
+              href="/assets/files/resume.pdf"
+              target="_blank"
+              class="about-btn btn"
+            >
+              View Resume
+            </a>
+          </div>
+
           <div class="about-info">
-            <div><strong>Name :</strong> Rishabh Kumar</div>
-            <div><strong>Email :</strong> rishabh.kumar.rush@gmail.com</div>
-            <div><strong>Location :</strong> Uttar Pradesh, Bharat</div>
-            <div><strong>Experience :</strong> Fresher</div>
+            <div class="info-card">
+              <i class="fa-solid fa-user"></i>
+              <div>
+                <span>Name</span>
+                <strong>Rishabh Kumar</strong>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <span>Role</span>
+                <strong>Frontend Developer</strong>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span>Location</span>
+                <strong>Uttar Pradesh, India</strong>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <span>Experience</span>
+                <strong>Fresher</strong>
+              </div>
+            </div>
           </div>
         </div>
       </section>
