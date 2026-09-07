@@ -255,10 +255,10 @@
                 src="https://picsum.photos/600/400?1"
                 alt="E-commerce website project"
               />
+              <span class="project-label">Featured Project</span>
             </div>
 
             <div class="project-content">
-              <span class="project-label">Featured Project</span>
 
               <h3>E-commerce Website</h3>
 
@@ -404,81 +404,103 @@
 
       <!-- ================= Services Section ================= -->
       <section id="services" class="services section">
-  <h2 class="h-title">Services</h2>
+        <h2 class="h-title">Services</h2>
 
-  <div class="services-grid">
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
 
-    <article class="service-card">
-      <div class="service-icon">
-        <i class="fa-solid fa-code"></i>
-      </div>
+            <h3>Responsive Web Development</h3>
 
-      <h3>Responsive Web Development</h3>
+            <p>
+              Building responsive websites that work smoothly across desktops,
+              tablets, and mobile devices.
+            </p>
+          </article>
 
-      <p>
-        Building responsive websites that work smoothly across desktops,
-        tablets, and mobile devices.
-      </p>
-    </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-palette"></i>
+            </div>
 
-    <article class="service-card">
-      <div class="service-icon">
-        <i class="fa-solid fa-palette"></i>
-      </div>
+            <h3>Frontend UI Development</h3>
 
-      <h3>Frontend UI Development</h3>
+            <p>
+              Creating clean, modern, and user-friendly interfaces using modern
+              frontend technologies.
+            </p>
+          </article>
 
-      <p>
-        Creating clean, modern, and user-friendly interfaces using modern
-        frontend technologies.
-      </p>
-    </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
 
-    <article class="service-card">
-      <div class="service-icon">
-        <i class="fa-solid fa-gauge-high"></i>
-      </div>
+            <h3>Website Optimization</h3>
 
-      <h3>Website Optimization</h3>
-
-      <p>
-        Improving frontend performance, usability, responsiveness, and
-        overall user experience.
-      </p>
-    </article>
-
-  </div>
-</section>
+            <p>
+              Improving frontend performance, usability, responsiveness, and
+              overall user experience.
+            </p>
+          </article>
+        </div>
+      </section>
 
       <!-- ================= Contact Section ================= -->
 
       <section id="contact" class="contact section">
         <h2 class="h-title">Contact Me</h2>
+
         <div class="contact-container">
-          <form>
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-            <input type="text" placeholder="Subject" />
-            <textarea
-              rows="6"
-              name=""
-              id=""
-              placeholder="Your Message"
-            ></textarea>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+
+            <input type="email" placeholder="Your Email" required />
+
+            <input type="text" placeholder="Subject" required />
+
+            <textarea rows="6" placeholder="Your Message" required></textarea>
+
             <button type="submit" class="contact-btn btn">Send Message</button>
           </form>
+
           <div class="cont-info">
             <h3>Let's Work Together</h3>
+
             <p>
-              I'm open to Frontend Develper opportunities, freelance projects
+              I'm open to Frontend Developer opportunities, freelance projects,
               and collaborations.
             </p>
+
+            <a href="mailto:rishabh.kumar.rush@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              rishabh.kumar.rush@gmail.com
+            </a>
+
+            <a
+              href="https://linkedin.com/in/rishabh-kumar-rush"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+            </a>
+
+            <a
+              href="https://github.com/Rishabh-747"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+
             <p>
-              <i class="fa-solid fa-envelope"></i>rishabh.kumar.rush@gmail.com
+              <i class="fa-solid fa-location-dot"></i>
+              Uttar Pradesh, India
             </p>
-            <p><i class="fab fa-linkedin"></i>LinkedIn</p>
-            <p><i class="fab fa-github"></i>GitHub</p>
-            <p><i class="fa-solid fa-location-dot"></i>Uttar Pradesh, Bharat</p>
           </div>
         </div>
       </section>
@@ -487,23 +509,49 @@
     <!-- ================= Footer ================= -->
 
     <footer class="footer">
-      <h2>Rishabh Kumar</h2>
-      <p>Frontend Developer creating modern web experiences.</p>
-      <div class="social-icon">
-        <a href="https://linkedin.com/in/rishabh-kumar-rush" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/Rishabh-747" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:rishabh.kumar.rush@gmail.com"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
+      <div class="footer-content">
+        <h2>Rishabh Kumar</h2>
+
+        <p>
+          Frontend Developer creating modern and responsive web experiences.
+        </p>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="social-icon">
+          <a
+            href="https://linkedin.com/in/rishabh-kumar-rush"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://github.com/Rishabh-747"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="mailto:rishabh.kumar.rush@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
       </div>
-      <p class="copyright">
-        &copy; 2026 Copyright Rishabh || All Rights Reserved.
-      </p>
+
+      <div class="copyright">
+        <p>&copy; 2026 Rishabh Kumar. All Rights Reserved.</p>
+      </div>
     </footer>
     <script src="/assets/js/script.js"></script>
   </body>
