@@ -1,17 +1,43 @@
-# 🌐 Personal Portfolio
+# 💻 Portfolio Website
 
-A responsive personal portfolio website built with HTML and CSS.
+A modern and responsive personal portfolio website built with **HTML, CSS, and JavaScript**, designed to showcase my frontend development skills, projects, and professional profile.
 
-### ✨ Features
+## ✨ Features
 
-* Responsive design
-* Hero, About, Skills, Projects & Contact sections
-* Clean and modern UI
+- 🏠 Modern hero section
+- 👨‍💻 About me section
+- 🛠️ Frontend skills showcase
+- 📂 Project showcase with live demo and GitHub links
+- ⭐ Featured project highlighting
+- 💼 Services section
+- 📩 Contact section
+- 📄 Resume view/download
+- 🔗 Social media integration
+- 📱 Fully responsive design
+- 🍔 Mobile navigation menu
+- ✨ Smooth hover and UI interactions
+- 🎨 Dark blue/cyan professional theme
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-HTML • CSS
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome
+- Google Fonts
+- Responsive Web Design
 
-### 🔗 Live Demo
+## 🔗 Links
 
-[View Portfolio](https://portfolio-liart-phi-80.vercel.app/)
+**Live Demo:** [View Portfolio](https://portfolio-liart-phi-80.vercel.app/)
+
+**GitHub:** [View Repository](https://github.com/Rishabh-747/Personal-Portfolio/)
+
+**Resume:** Available on the portfolio website
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone YOUR_REPOSITORY_LINK
