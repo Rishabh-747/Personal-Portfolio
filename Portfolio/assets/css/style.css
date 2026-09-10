@@ -19,7 +19,6 @@ body {
 /* ==== Blue Professional Theme ==== */
 
 :root {
-  /* --primary: #3b82f6; */
   --primary: #38bdf8;
   --primary-hover: #2563eb;
 
@@ -847,6 +846,8 @@ main section {
 
   .contact-container {
     grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
   }
 }
 
@@ -861,6 +862,9 @@ main section {
 }
 
 @media only screen and (max-width: 600px) {
+  main .section {
+padding: 50px 6%;
+  }
   .services-grid {
     grid-template-columns: 1fr;
   }
@@ -939,7 +943,9 @@ main section {
 
   .contact-form,
   .cont-info {
-    padding: 25px 20px;
+    width: 100%;
+    min-width: 0;
+    padding: 22px 16px;
   }
 
   .cont-info h3 {
@@ -975,5 +981,10 @@ main section {
   .live-btn {
     width: 100%;
     justify-content: center;
+  }
+
+   .cont-info a {
+    font-size: 14px;
+    overflow-wrap: anywhere;
   }
 }
