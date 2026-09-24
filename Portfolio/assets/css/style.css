@@ -19,7 +19,7 @@ body {
 /* ==== Blue Professional Theme ==== */
 
 :root {
-  --primary: #38bdf8;
+  --primary: #3381ff;
   --primary-hover: #2563eb;
 
   --bg: #020617;
@@ -28,6 +28,34 @@ body {
   --text: #faf8fc;
   --text-light: #94a3b8;
   --form: #1e293b;
+
+  --border: rgba(255, 255, 255, 0.06);
+  --glow: rgba(56, 189, 248, 0.15);
+}
+
+/* =========================
+       COLOR THEMES
+========================= */
+
+[data-theme="purple"] {
+  --primary: #a855f7;
+  --primary-hover: #7e22ce;
+  --border: rgba(168, 85, 247, 0.2);
+  --glow: rgba(168, 85, 247, 0.15);
+}
+
+[data-theme="emerald"] {
+  --primary: #34d399;
+  --primary-hover: #059669;
+  --border: rgba(52, 211, 153, 0.2);
+  --glow: rgba(52, 211, 153, 0.15);
+}
+
+[data-theme="orange"] {
+  --primary: #ff6b3d;
+  --primary-hover: #e8552c;
+  --border: rgba(255, 107, 61, 0.2);
+  --glow: rgba(255, 107, 61, 0.15);
 }
 
 a {
@@ -59,7 +87,7 @@ ul {
 
 .btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px 2px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 10px 20px 2px var(--glow);
 }
 
 /* Font Size */
@@ -124,6 +152,98 @@ p {
   color: var(--primary);
   background: transparent;
 }
+
+/* =========================
+       THEME SELECTOR
+========================= */
+
+.theme-wrapper {
+  position: relative;
+}
+
+.theme-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--primary);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  background: var(--primary);
+  color: var(--bg);
+  transform: translateY(-2px);
+}
+
+.theme-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+
+  display: flex;
+  gap: 10px;
+
+  padding: 10px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: all 0.3s ease;
+}
+
+.theme-wrapper.active .theme-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.theme-dot {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+}
+
+.theme-dot.blue {
+  background: #3381ff;
+}
+
+.theme-dot.purple {
+  background: #a855f7;
+}
+
+.theme-dot.emerald {
+  background: #34d399;
+}
+
+.theme-dot.orange {
+  background: #fb923c;
+}
+
 .menu-btn {
   display: none;
   border: none;
@@ -227,7 +347,7 @@ p {
   justify-content: center;
   width: 45px;
   height: 45px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
   border-radius: 50%;
   background: var(--card);
   color: var(--primary);
@@ -239,7 +359,7 @@ p {
   transform: translateY(-5px);
   background: var(--primary);
   color: var(--bg);
-  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.25);
+  box-shadow: 0 10px 25px var(--glow);
 }
 
 /* ===== Hero Background Effect ===== */
@@ -258,7 +378,7 @@ p {
 
 /* ===== Main ===== */
 main section {
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
 }
 
 .navbar li a {
@@ -312,7 +432,7 @@ main section {
   min-height: 100px;
   padding: 20px;
   background: var(--card);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
   border-radius: 15px;
   transition: all 0.3s ease;
 }
@@ -320,7 +440,7 @@ main section {
 .info-card:hover {
   transform: translateY(-5px);
   border-color: var(--primary);
-  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.12);
+  box-shadow: 0 10px 25px var(--glow);
 }
 
 .info-card > i {
@@ -363,7 +483,7 @@ main section {
 .skill-box {
   padding: 30px;
   background: var(--card);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
   border-radius: 20px;
   transition: all 0.3s ease;
 }
@@ -371,7 +491,7 @@ main section {
 .skill-box:hover {
   transform: translateY(-5px);
   border-color: var(--primary);
-  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.12);
+  box-shadow: 0 10px 25px var(--glow);
 }
 
 .skill-heading {
@@ -399,7 +519,7 @@ main section {
 
 .skill {
   padding: 9px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.03);
   color: var(--text-light);
@@ -429,7 +549,7 @@ main section {
   flex-direction: column;
   overflow: hidden;
   background: var(--card);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
   border-radius: 20px;
   transition: all 0.3s ease;
 }
@@ -437,7 +557,7 @@ main section {
 .project-card:hover {
   transform: translateY(-8px);
   border-color: var(--primary);
-  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.15);
+  box-shadow: 0 15px 35px var(--glow);
 }
 
 .project-image {
@@ -448,7 +568,7 @@ main section {
 
 .project-image img {
   width: 100%;
-  height: 100%;
+  height: 220px;
   display: block;
   object-fit: cover;
   transition: transform 0.4s ease;
@@ -471,8 +591,8 @@ main section {
   left: 15px;
   padding: 6px 12px;
   border-radius: 20px;
-  background: var(--primary);
-  color: var(--bg);
+  background: var(--bg);
+  color: var(--primary);
   font-size: 12px;
   font-weight: 600;
   z-index: 2;
@@ -511,7 +631,7 @@ main section {
 
 .tech span {
   padding: 6px 12px;
-  border: 1px solid rgba(56, 189, 248, 0.2);
+  border: 1px solid var(--border);
   border-radius: 20px;
   background: rgba(56, 189, 248, 0.08);
   color: var(--primary);
@@ -546,7 +666,7 @@ main section {
   padding: 35px 25px;
   text-align: center;
   background: var(--card);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
   border-radius: 20px;
   transition: all 0.3s ease;
 }
@@ -554,7 +674,7 @@ main section {
 .service-card:hover {
   transform: translateY(-7px);
   border-color: var(--primary);
-  box-shadow: 0 15px 30px rgba(56, 189, 248, 0.12);
+  box-shadow: 0 15px 30px var(--glow);
 }
 
 .service-icon {
@@ -597,7 +717,7 @@ main section {
   flex-direction: column;
   padding: 35px;
   background: var(--card);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
   border-radius: 20px;
 }
 
@@ -606,7 +726,7 @@ main section {
   width: 100%;
   padding: 15px;
   margin-bottom: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
   border-radius: 10px;
   outline: none;
   background: var(--form);
@@ -619,7 +739,7 @@ main section {
 .contact input:focus,
 .contact textarea:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.08);
+  box-shadow: 0 0 0 2px var(--glow);
 }
 
 .contact textarea {
@@ -640,7 +760,7 @@ main section {
 .cont-info {
   padding: 40px;
   background: var(--card);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
   border-radius: 20px;
 }
 
@@ -792,7 +912,7 @@ main section {
     gap: 10px;
 
     background: var(--card);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border);
     border-radius: 15px;
 
     opacity: 0;
@@ -863,7 +983,7 @@ main section {
 
 @media only screen and (max-width: 600px) {
   main .section {
-padding: 50px 6%;
+    padding: 50px 6%;
   }
   .services-grid {
     grid-template-columns: 1fr;
@@ -983,7 +1103,7 @@ padding: 50px 6%;
     justify-content: center;
   }
 
-   .cont-info a {
+  .cont-info a {
     font-size: 14px;
     overflow-wrap: anywhere;
   }

@@ -8,7 +8,7 @@
     <!---------------- Description ----------------->
     <meta
       name="description"
-      content="Portfolio of Rishabh Kumar, a Frontend Developer specializing in responsive web design, React, and clean user experiences. View my latest projects"
+      content="Rishabh Kumar is a Frontend Developer specializing in React, JavaScript, Tailwind CSS, and responsive web development. Explore his projects and portfolio."
     />
     <!---------------- Author Name ----------------->
     <meta name="author" content="Rishabh Kumar" />
@@ -43,10 +43,56 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <a href="/assets/files/Rishabh_Frontend_Resume.pdf" download class="nav-btn btn"
+        <!-- Theme Selector -->
+        <div class="theme-wrapper">
+          <button class="theme-btn" aria-label="Change color theme">
+            <i class="fa-solid fa-palette"></i>
+          </button>
+
+          <div class="theme-menu">
+            <button
+              class="theme-option"
+              data-theme="blue"
+              aria-label="Blue theme"
+            >
+              <span class="theme-dot blue"></span>
+            </button>
+
+            <button
+              class="theme-option"
+              data-theme="purple"
+              aria-label="Purple theme"
+            >
+              <span class="theme-dot purple"></span>
+            </button>
+
+            <button
+              class="theme-option"
+              data-theme="emerald"
+              aria-label="Emerald theme"
+            >
+              <span class="theme-dot emerald"></span>
+            </button>
+
+            <button
+              class="theme-option"
+              data-theme="orange"
+              aria-label="Orange theme"
+            >
+              <span class="theme-dot orange"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Resume -->
+        <a
+          href="/assets/files/Rishabh_Frontend_Resume.pdf"
+          download
+          class="nav-btn btn"
           >Resume</a
         >
 
+        <!-- Mobile Menu -->
         <button class="menu-btn" aria-label="Open navigation menu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -252,14 +298,13 @@
           <article class="project-card featured-project">
             <div class="project-image">
               <img
-                src="https://picsum.photos/600/400?1"
-                alt="E-commerce website project"
+                src="assets/images/ecommerce.png"
+                alt="ShopEase E-commerce Website"
               />
               <span class="project-label">Featured Project</span>
             </div>
 
             <div class="project-content">
-
               <h3>E-commerce Website</h3>
 
               <p>
@@ -306,8 +351,8 @@
           <article class="project-card">
             <div class="project-image">
               <img
-                src="https://picsum.photos/600/400?2"
-                alt="Portfolio website project"
+                src="assets/images/portfolio.png"
+                alt="Rishabh Portfolio Website"
               />
             </div>
 
@@ -356,7 +401,7 @@
             <div class="project-image">
               <img
                 src="https://picsum.photos/600/400?3"
-                alt="Netflix landing page project"
+                alt="Netflix landing page"
               />
             </div>
 
@@ -454,7 +499,7 @@
         <h2 class="h-title">Contact Me</h2>
 
         <div class="contact-container">
-          <form class="contact-form">
+          <form class="contact-form" id="contactForm">
             <input type="text" placeholder="Your Name" required />
 
             <input type="email" placeholder="Your Email" required />
@@ -463,7 +508,7 @@
 
             <textarea rows="6" placeholder="Your Message" required></textarea>
 
-            <button type="submit" class="contact-btn btn" >Send Message</button>
+            <button type="submit" class="contact-btn btn">Send Message</button>
           </form>
 
           <div class="cont-info">
@@ -554,7 +599,7 @@
       </div>
     </footer>
 
-      <!---------------- JS ----------------->
+    <!---------------- JS ----------------->
     <script src="/assets/js/script.js"></script>
   </body>
 </html>
